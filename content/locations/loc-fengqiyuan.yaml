@@ -1,0 +1,16 @@
+id: loc-fengqiyuan
+slug: fengqiyuan
+displayName: 凤栖原高新片区
+type: location
+classification: WEB_DERIVED
+brief: 长垣新兴科创新区与产业融合发展实验片区，连接外环快速路与新兴先进制造研发基地。
+tags:
+  - 新兴产业区
+  - 交通枢纽
+  - 城市更新
+cover: /media/locations/fengqiyuan.svg
+facts:
+  - label: 行政归属
+    value: 长垣市高新技术开发区
+  - label: 重点关注
+    value: 外环快速路联络道通车、智慧交通流试行（注：凤栖原808号等局部细节保持开放未定案状态）

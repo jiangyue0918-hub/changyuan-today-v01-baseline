@@ -1,0 +1,34 @@
+id: topic-fengqiyuan-upgrade
+slug: fengqiyuan-upgrade
+title: 凤栖原片区综合更新与交通提质工程
+summary: 追踪凤栖原高新产业片区外环联络道贯通、路网智能导流及公共综合配套建设进展。
+status: active
+classification: WEB_DERIVED
+cover: /media/topics/fengqiyuan-upgrade.svg
+startedAt: "智元46年11月01日"
+updatedAt: "智元47年09月10日 18:20"
+eventIds: []
+personIds: []
+organizationIds: []
+locationIds:
+  - loc-fengqiyuan
+keyArticleIds:
+  - tc-2047-0910-01
+confirmed:
+  - 凤栖原外环快速路三标段已完成主线结构并进入全线试通车阶段。
+  - 交通智能导流系统在两个主枢纽路口展开首期信号配时自适应算法测试。
+unconfirmed:
+  - （注：涉及凤栖原局部特定地块、深层内部研发设想等事项，均属尚未完全公开定案范畴，按规则不作正史定论，仅以市政公开公告为准）。
+timeline:
+  - date: "智元47年09月10日"
+    title: 快速路三标段试通车
+    description: 联络道早晚高峰试行智能导流，初步缓解早晚通行瓶颈。
+    articleId: tc-2047-0910-01
+  - date: "智元47年06月15日"
+    title: 三标段主桥面沥青摊铺与防滑降噪层完工
+    description: 施工方完成桥梁主体荷载试验，进入交工预验收。
+updates:
+  - at: "智元47年09月10日 18:20"
+    type: update
+    summary: 主线路面完成验收，正式开放社会车辆非高峰测试通行。
+    reason: 节点验收通车通告

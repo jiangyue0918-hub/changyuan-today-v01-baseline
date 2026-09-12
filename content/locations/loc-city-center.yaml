@@ -1,0 +1,16 @@
+id: loc-city-center
+slug: city-center
+displayName: 长垣中央商务与文化区
+type: location
+classification: WEB_DERIVED
+brief: 长垣新闻出版、传媒机构、现代商业综合体与城市会客厅所在区域，仙都传媒总部所在地。
+tags:
+  - 核心商务区
+  - 传媒中枢
+  - 文化街区
+cover: /media/locations/city-center.svg
+facts:
+  - label: 主要地标
+    value: 仙都传媒大厦、长垣大剧院、青年文化长廊
+  - label: 区域功能
+    value: 新闻采编发布中枢、文化艺术活动策源地

@@ -1,0 +1,41 @@
+id: topic-winter-energy-2047
+slug: winter-energy-2047
+title: 智元47年长垣冬季能源保供与热网统筹
+summary: 记录长垣市在智元47年入冬前的集中热网检修、低温管道承压测试及各区保暖应急调度的全过程。
+status: active
+classification: WEB_DERIVED
+cover: /media/topics/winter-energy-2047.svg
+startedAt: "智元47年08月15日"
+updatedAt: "智元47年09月11日 16:30"
+eventIds: []
+personIds:
+  - person-chen-wenlin
+organizationIds:
+  - org-changyuan-energy
+locationIds:
+  - loc-west-district
+keyArticleIds:
+  - tc-2047-0911-01
+confirmed:
+  - 西区主干供热管线已经完成闭环承压检修并注入第一批低温循环水。
+  - 老旧小区二次管网改造成效显著，预计覆盖新增供暖面积超200万平方米。
+  - 智能热网分段阀门传感器升级已实现秒级回传与异常自动切断。
+unconfirmed:
+  - 极端低温寒潮是否会导致提前供暖窗口期提前（以市气象与应急部门正式通告为准）。
+  - 个别未改造老厂区自主热力管线并网协议细则仍在协调阶段。
+timeline:
+  - date: "智元47年09月11日"
+    title: 西区智元热网低温管线秋检完毕
+    description: 供热调度中心正式启动低温带压循环综合测试，调度总长陈文林现场调度。
+    articleId: tc-2047-0911-01
+  - date: "智元47年08月28日"
+    title: 全市老旧小区二次管网更新攻坚阶段总结
+    description: 市能源集团发布供热管网升级进展报告，重点排除末梢管段漏损隐患。
+  - date: "智元47年08月15日"
+    title: 智元47年度秋检工作全面铺开
+    description: 市供暖统筹协调组成立，设立24小时民生热力保供热线与在线报修通道。
+updates:
+  - at: "智元47年09月11日 16:30"
+    type: update
+    summary: 西区检修完成并全面开启秋季首轮闭环冷态注水测试。
+    reason: 施工进展节点公布

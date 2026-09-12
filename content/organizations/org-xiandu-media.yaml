@@ -1,0 +1,20 @@
+id: org-xiandu-media
+slug: xiandu-media
+displayName: 仙都传媒集团
+type: organization
+classification: CANON
+brief: 综合性现代传媒集团，旗下拥有主门户“今日长垣”、独立先锋子品牌《装仙人》以及数字音视频与专业档案服务。
+tags:
+  - 媒体集团
+  - 今日长垣母公司
+  - 智元传媒
+cover: /media/organizations/xiandu-media.svg
+locationIds:
+  - loc-city-center
+facts:
+  - label: 机构性质
+    value: 综合传媒控股集团
+  - label: 旗下主干媒体
+    value: 今日长垣、装仙人
+  - label: 战略方向
+    value: 新闻采编、数字专题、深度调查、文化出版

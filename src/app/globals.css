@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Print and readability enhancements */
+.article-prose h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+  border-left: 4px solid #0066cc;
+  padding-left: 0.75rem;
+}
+
+.article-prose h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.article-prose p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  color: #334155;
+  text-align: justify;
+}
+
+.article-prose blockquote {
+  border-left: 4px solid #cbd5e1;
+  padding: 0.75rem 1rem;
+  background-color: #f1f5f9;
+  border-radius: 0 4px 4px 0;
+  margin: 1.5rem 0;
+  color: #475569;
+  font-style: italic;
+}
+
+.article-prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #334155;
+}
+
+.article-prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}

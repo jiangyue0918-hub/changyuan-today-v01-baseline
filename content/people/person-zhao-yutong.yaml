@@ -1,0 +1,20 @@
+id: person-zhao-yutong
+slug: zhao-yutong
+displayName: 赵雨桐
+type: person
+classification: WEB_DERIVED
+brief: 长垣智算调度中心首席运维架构师，负责智算节点协同算力网络与分布式数据安全防护。
+organizationIds:
+  - org-changyuan-tech-center
+locationIds:
+  - loc-west-district
+tags:
+  - 智算中心
+  - 算力网络
+  - 数字化转型
+cover: /media/people/zhao-yutong.svg
+facts:
+  - label: 职责范围
+    value: 智算集群负载均衡与实时推演运维
+  - label: 关联技术
+    value: 分布式节点集群调度算法

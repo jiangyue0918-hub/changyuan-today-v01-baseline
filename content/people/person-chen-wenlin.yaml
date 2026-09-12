@@ -1,0 +1,22 @@
+id: person-chen-wenlin
+slug: chen-wenlin
+displayName: 陈文林
+type: person
+classification: WEB_DERIVED
+brief: 长垣市供热管网与智能热力调度中心高级总调度长，长期主持西区与老城干管改造工程。
+organizationIds:
+  - org-changyuan-energy
+locationIds:
+  - loc-west-district
+tags:
+  - 城市供暖
+  - 市政热网
+  - 能源调度
+cover: /media/people/chen-wenlin.svg
+facts:
+  - label: 现任职务
+    value: 市热网总调度长（WEB_DERIVED）
+  - label: 涉及主要领域
+    value: 智元47年秋检低温保供、老区管网改造
+  - label: 媒体首次记录
+    value: 智元41年

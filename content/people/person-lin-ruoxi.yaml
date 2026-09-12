@@ -1,0 +1,21 @@
+id: person-lin-ruoxi
+slug: lin-ruoxi
+displayName: 林若希
+type: person
+classification: WEB_DERIVED
+brief: 新锐声音艺术家、长垣独立声场设计人。《装仙人》智元47年秋季刊特邀封面人物。
+organizationIds: []
+locationIds:
+  - loc-city-center
+tags:
+  - 声音设计
+  - 实验艺术
+  - 城市文化
+cover: /media/people/lin-ruoxi.svg
+facts:
+  - label: 领域
+    value: 空间声学与合成声音艺术
+  - label: 代表创作
+    value: 《夜间机械共鸣》（WEB_DERIVED）
+  - label: 专访媒体
+    value: 《装仙人》秋季号

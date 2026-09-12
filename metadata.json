@@ -1,0 +1,6 @@
+{
+  "name": "今日长垣 / TODAY CHANGYUAN",
+  "description": "仙都传媒旗下主综合新闻门户，以及《装仙人》独立子品牌数字内容平台（智元47年）。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,16 @@
+id: loc-west-district
+slug: west-district
+displayName: 长垣西区产业园
+type: location
+classification: WEB_DERIVED
+brief: 长垣现代重工业与现代热力能源枢纽集中区，承载着全城主力供能网与装备智造产业集群。
+tags:
+  - 工业园区
+  - 热力枢纽
+  - 智能装备
+cover: /media/locations/west-district.svg
+facts:
+  - label: 主要设施
+    value: 西区主热力管线泵站、工业智算分布式副机房
+  - label: 区域特色
+    value: 兼具工业实力与智慧供能示范

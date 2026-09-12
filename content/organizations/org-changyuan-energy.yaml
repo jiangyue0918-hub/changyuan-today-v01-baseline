@@ -1,0 +1,18 @@
+id: org-changyuan-energy
+slug: changyuan-energy
+displayName: 长垣城市能源与热网集团
+type: organization
+classification: WEB_DERIVED
+brief: 承担长垣市域冬季集中供暖热网维护、低温热力调度及新能源耦合试点的公共服务保障机构。
+tags:
+  - 公共事业
+  - 热力保供
+  - 市政管网
+cover: /media/organizations/changyuan-energy.svg
+locationIds:
+  - loc-west-district
+facts:
+  - label: 责任范围
+    value: 全市集中热网运行、老旧小区低温管道改造
+  - label: 智元47年重点工程
+    value: 西区热网管线抗寒检修、入冬前承压演练

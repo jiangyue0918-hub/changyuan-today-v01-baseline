@@ -1,0 +1,18 @@
+id: org-changyuan-tech-center
+slug: changyuan-tech-center
+displayName: 长垣智算核心调度中心
+type: organization
+classification: WEB_DERIVED
+brief: 长垣市新型算力枢纽，汇聚工业计算、市政实时推演与城市数据资产的安全服务中枢。
+tags:
+  - 智算基础设施
+  - 工业互联
+  - 数据安全
+cover: /media/organizations/changyuan-tech-center.svg
+locationIds:
+  - loc-west-district
+facts:
+  - label: 主要职能
+    value: 工业装备协同计算、气象与热力推演
+  - label: 节点规模
+    value: 分布式算力节点集群（WEB_DERIVED）

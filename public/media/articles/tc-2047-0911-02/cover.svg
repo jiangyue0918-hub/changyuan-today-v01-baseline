@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.08" />
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgGrad)" />
+  <rect width="800" height="450" fill="url(#grid)" />
+  
+  <!-- Technical Frame Elements -->
+  <rect x="24" y="24" width="752" height="402" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4 4" />
+  
+  <!-- Corner Marks -->
+  <path d="M 20 34 L 20 20 L 34 20" fill="none" stroke="#10b981" stroke-width="2" />
+  <path d="M 766 20 L 780 20 L 780 34" fill="none" stroke="#10b981" stroke-width="2" />
+  <path d="M 20 416 L 20 430 L 34 430" fill="none" stroke="#10b981" stroke-width="2" />
+  <path d="M 766 430 L 780 430 L 780 416" fill="none" stroke="#10b981" stroke-width="2" />
+
+  <!-- Top Metadata Badge -->
+  <rect x="40" y="40" width="160" height="26" rx="4" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="0.75" />
+  <text x="50" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#10b981">[智元47年 档案纪实]</text>
+  
+  <text x="760" y="58" text-anchor="end" font-family="monospace" font-size="12" fill="#94a3b8">FRAME_STABLE // RAW-CAM</text>
+
+  <!-- Central Visual Symbol / Graphic -->
+  <circle cx="400" cy="190" r="48" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-width="1.5" />
+  <path d="M 380 190 L 420 190 M 400 170 L 400 210" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.8" />
+  <circle cx="400" cy="190" r="16" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.9" />
+
+  <!-- Title & Caption -->
+  <text x="400" y="280" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="22" font-weight="bold" fill="#f8fafc">智元47年长垣产业运行观察发布大厅</text>
+  <text x="400" y="315" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="14" fill="#94a3b8">类别: 产业经济 / 智库研报 | 摄影/来源: 仙都传媒供图</text>
+
+  <!-- Bottom Bar Info -->
+  <line x1="40" y1="400" x2="760" y2="400" stroke="#334155" stroke-width="1" />
+  <text x="40" y="418" font-family="monospace" font-size="11" fill="#64748b">仙都传媒图文档案中心 · 稳定本地存储</text>
+  <text x="760" y="418" text-anchor="end" font-family="monospace" font-size="11" fill="#64748b">ARCHIVE_ID: TC-47-MEDIA</text>
+</svg>

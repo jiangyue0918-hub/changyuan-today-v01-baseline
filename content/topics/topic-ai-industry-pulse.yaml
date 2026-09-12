@@ -1,0 +1,39 @@
+id: topic-ai-industry-pulse
+slug: ai-industry-pulse
+title: 智算引擎驱动下的长垣制造业转型跟踪
+summary: 聚焦长垣装备制造企业接入智算调度网络、实施柔性产线智能优化的持续产业调研。
+status: active
+classification: WEB_DERIVED
+cover: /media/topics/ai-industry-pulse.svg
+startedAt: "智元47年03月10日"
+updatedAt: "智元47年09月11日 11:00"
+eventIds: []
+personIds:
+  - person-zhao-yutong
+organizationIds:
+  - org-changyuan-tech-center
+  - org-xiandu-media
+locationIds:
+  - loc-west-district
+keyArticleIds:
+  - tc-2047-0911-02
+  - tc-2047-0909-01
+confirmed:
+  - 长垣智算调度中心节点扩容首阶段完成，支持高负载工业仿真。
+  - 仙都传媒智库联合发布第一期智元47年产业综合运行观察报告。
+unconfirmed:
+  - 第二批工业专网带宽扩容财政补贴细则将于四季度正式公开。
+timeline:
+  - date: "智元47年09月11日"
+    title: 产业运行观察报告发布
+    description: 仙都传媒智库与市产业研究机构发布最新智算工业联动数据。
+    articleId: tc-2047-0911-02
+  - date: "智元47年09月09日"
+    title: 探访长垣智算核心调度机房
+    description: 今日长垣记者实地走访智算中心机房，专访首席运维架构师赵雨桐。
+    articleId: tc-2047-0909-01
+updates:
+  - at: "智元47年09月11日 11:00"
+    type: update
+    summary: 发布最新智元47年三季度智能装备增速分析。
+    reason: 专题数据例行发布
