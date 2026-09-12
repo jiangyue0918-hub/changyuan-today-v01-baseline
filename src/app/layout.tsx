@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { AppProvider } from '@/context/AppContext';
+import DebugToolbar from '@/components/debug/DebugToolbar';
 
 export const metadata: Metadata = {
   title: {
@@ -28,9 +30,12 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-blue-600 selection:text-white">
-        <Header />
-        <main className="flex-1 w-full">{children}</main>
-        <Footer />
+        <AppProvider>
+          <Header />
+          <main className="flex-1 w-full">{children}</main>
+          <Footer />
+          <DebugToolbar />
+        </AppProvider>
       </body>
     </html>
   );

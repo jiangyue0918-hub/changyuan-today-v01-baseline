@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { getEditorialHome } from '@/lib/content';
 import { Clock, ShieldCheck, ChevronRight, Sparkles, Flame, Headphones, ArrowUpRight, Compass } from 'lucide-react';
 import VerificationBadge from '@/components/article/VerificationBadge';
+import MajorEventBanner from '@/components/event/MajorEventBanner';
 
 export default async function HomePage() {
   const {
@@ -18,6 +19,9 @@ export default async function HomePage() {
 
   return (
     <div className="w-full pb-16">
+      {/* Major Event Emergency Broadcast Banner (Active when isMajorEventMode is on) */}
+      <MajorEventBanner />
+
       {/* =========================================================================
           B. 即时关注 / NOW: 导航下方一排 4 条短新闻卡，用于快速入口，不做跑马灯
           ========================================================================= */}
@@ -434,7 +438,7 @@ export default async function HomePage() {
                     本期重磅封面人物专访：
                   </span>
                   <Link
-                    href={`/article/${zhuangxianrenFeature.slug}`}
+                    href={`/zhuangxianren/article/${zhuangxianrenFeature.slug}`}
                     className="text-base font-bold text-white hover:text-rose-400 transition-colors"
                   >
                     {zhuangxianrenFeature.title}

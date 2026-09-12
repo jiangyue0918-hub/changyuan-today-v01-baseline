@@ -72,7 +72,7 @@ export default async function ZhuangxianrenPage() {
 
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white font-serif leading-tight">
                 <Link
-                  href={`/article/${coverArticle.slug}`}
+                  href={`/zhuangxianren/article/${coverArticle.slug}`}
                   className="hover:text-rose-400 transition-colors"
                 >
                   {coverArticle.title}
@@ -97,7 +97,7 @@ export default async function ZhuangxianrenPage() {
                 </div>
 
                 <Link
-                  href={`/article/${coverArticle.slug}`}
+                  href={`/zhuangxianren/article/${coverArticle.slug}`}
                   className="px-5 py-2 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-lg transition-colors flex items-center gap-1.5 text-xs shadow-md"
                 >
                   <span>阅读本期封面全篇</span>

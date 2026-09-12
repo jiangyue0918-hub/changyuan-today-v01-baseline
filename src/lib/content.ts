@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import yaml from 'yaml';
+import { load as parseYaml } from 'js-yaml';
 import { marked } from 'marked';
 import {
   Article,
@@ -31,7 +31,7 @@ export function getAllAuthors(): Author[] {
     .filter((f) => f.endsWith('.yaml') || f.endsWith('.yml'))
     .map((file) => {
       const raw = fs.readFileSync(path.join(dir, file), 'utf-8');
-      return yaml.parse(raw) as Author;
+      return parseYaml(raw) as Author;
     });
 }
 
@@ -54,7 +54,7 @@ export function getAllBrands(): Brand[] {
     .filter((f) => f.endsWith('.yaml') || f.endsWith('.yml'))
     .map((file) => {
       const raw = fs.readFileSync(path.join(dir, file), 'utf-8');
-      return yaml.parse(raw) as Brand;
+      return parseYaml(raw) as Brand;
     });
 }
 
@@ -66,7 +66,7 @@ export function getAllTopics(): Topic[] {
     .filter((f) => f.endsWith('.yaml') || f.endsWith('.yml'))
     .map((file) => {
       const raw = fs.readFileSync(path.join(dir, file), 'utf-8');
-      return yaml.parse(raw) as Topic;
+      return parseYaml(raw) as Topic;
     });
 }
 
@@ -99,7 +99,7 @@ export function getAllEntities(type?: 'person' | 'organization' | 'location'): E
     for (const file of files) {
       if (!file.endsWith('.yaml') && !file.endsWith('.yml')) continue;
       const raw = fs.readFileSync(path.join(dir, file), 'utf-8');
-      const item = yaml.parse(raw) as Entity;
+      const item = parseYaml(raw) as Entity;
       item.type = t;
       results.push(item);
     }
@@ -240,7 +240,7 @@ export function getEditorialHome(): {
 
   if (fs.existsSync(homeYamlPath)) {
     try {
-      config = yaml.parse(fs.readFileSync(homeYamlPath, 'utf-8')) as EditorialHome;
+      config = parseYaml(fs.readFileSync(homeYamlPath, 'utf-8')) as EditorialHome;
     } catch (e) {
       console.error('Failed to parse home.yaml, falling back to auto-curation', e);
     }

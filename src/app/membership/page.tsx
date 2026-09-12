@@ -21,6 +21,15 @@ export default function MembershipPage() {
         <p className="text-sm text-slate-600 max-w-xl mx-auto leading-relaxed">
           您的每一份支持，都将用于保障采编团队深入热网一线、算力机房与市井街角的无干预现场核验与事实调查。
         </p>
+        <div className="pt-2">
+          <Link
+            href="/premium"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-700 bg-blue-50/80 border border-blue-200/80 px-3 py-1.5 rounded-full hover:bg-blue-100 transition-colors"
+          >
+            <span>已经开通观察员权益？直接前往「深度空间」专属特刊</span>
+            <span>→</span>
+          </Link>
+        </div>
       </div>
 
       {/* Subscription Tier Cards */}

@@ -43,12 +43,15 @@ export default function Header() {
               <ShieldCheck className="w-3 h-3 text-emerald-400" />
               <span>更正记录</span>
             </Link>
-            <Link href="/membership" className="text-amber-400 hover:text-amber-300 transition-colors font-medium">
+            <Link href="/membership" className="text-slate-300 hover:text-white transition-colors font-medium">
               开通会员
+            </Link>
+            <Link href="/premium" className="text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1 font-bold">
+              <span>💎 深度空间</span>
             </Link>
             <Link href="/me" className="hover:text-white transition-colors flex items-center gap-1">
               <UserCheck className="w-3 h-3" />
-              <span>连接终端</span>
+              <span>智能终端</span>
             </Link>
           </div>
         </div>
