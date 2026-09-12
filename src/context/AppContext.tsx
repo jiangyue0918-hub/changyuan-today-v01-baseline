@@ -7,6 +7,8 @@ export type UserRole = 'guest' | 'citizen' | 'vip' | 'org';
 interface AppContextType {
   userRole: UserRole;
   setUserRole: (role: UserRole) => void;
+  userCoins: number;
+  setUserCoins: (coins: number) => void;
   isMajorEventMode: boolean;
   setIsMajorEventMode: (active: boolean) => void;
   debugEnabled: boolean;
@@ -31,6 +33,7 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [userRole, setUserRole] = useState<UserRole>('citizen');
+  const [userCoins, setUserCoins] = useState<number>(100);
   const [isMajorEventMode, setIsMajorEventMode] = useState(false);
   const [debugEnabled, setDebugEnabled] = useState(false);
 
@@ -131,6 +134,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       value={{
         userRole,
         setUserRole,
+        userCoins,
+        setUserCoins,
         isMajorEventMode,
         setIsMajorEventMode,
         debugEnabled,

@@ -70,6 +70,9 @@ export interface ArticleFrontmatter {
   sourceRefs?: string[];
   commentsEnabled?: boolean;
   featured?: boolean;
+  issue?: string;
+  volume?: string;
+  column?: string;
   updates?: ArticleUpdate[];
 }
 

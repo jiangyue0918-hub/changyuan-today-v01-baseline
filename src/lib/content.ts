@@ -219,6 +219,81 @@ export function getArticlesByBrand(brand: 'today-changyuan' | 'zhuangxianren'): 
   return getAllArticles().filter((a) => a.brand === brand);
 }
 
+export function getZhuangxianrenHome(): {
+  coverArticle: Article | null;
+  issueArticles: Article[];
+  featuredArticles: Article[];
+  exclusiveArticles: Article[];
+  peopleArticles: Article[];
+  cityLifeArticles: Article[];
+  techArtArticles: Article[];
+  latestArticles: Article[];
+  allZxrArticles: Article[];
+  issues: Array<{ id: string; name: string; date: string; count: number; active: boolean }>;
+} {
+  const homeYamlPath = path.join(CONTENT_DIR, 'editorial', 'home.yaml');
+  let curatedCoverId: string | undefined;
+  if (fs.existsSync(homeYamlPath)) {
+    try {
+      const config = parseYaml(fs.readFileSync(homeYamlPath, 'utf-8')) as any;
+      curatedCoverId = config.zhuangxianrenFeatureId;
+    } catch {
+      // fallback
+    }
+  }
+
+  const allZxr = getArticlesByBrand('zhuangxianren');
+  const coverArticle = (curatedCoverId ? allZxr.find((a) => a.id === curatedCoverId) : null) || allZxr[0] || null;
+
+  // Remaining articles excluding cover to prevent duplicate prominence
+  const remaining = allZxr.filter((a) => a.id !== coverArticle?.id);
+
+  // 本期精选 / 目录
+  const featuredArticles = remaining.filter((a) => a.featured || a.column === 'featured').length > 0
+    ? remaining.filter((a) => a.featured || a.column === 'featured')
+    : remaining.slice(0, 3);
+
+  // 独家 / 特刊
+  const exclusiveArticles = remaining.filter(
+    (a) => a.access === 'member' || a.access === 'premium' || a.column === 'exclusive' || a.tags?.some((t) => t.includes('独家') || t.includes('特刊'))
+  );
+
+  // 人物专栏
+  const peopleArticles = remaining.filter(
+    (a) => a.contentType === 'interview' || a.column === 'people' || a.personIds && a.personIds.length > 0 || a.tags?.some((t) => t.includes('人物'))
+  );
+
+  // 城市生活 / 夜行
+  const cityLifeArticles = remaining.filter(
+    (a) => a.section === 'lifestyle' || a.column === 'citylife' || a.column === 'soundscape' || a.tags?.some((t) => t.includes('城市') || t.includes('漫游') || t.includes('声音'))
+  );
+
+  // 科技消费 / 文化艺术
+  const techArtArticles = remaining.filter(
+    (a) => a.section === 'culture' || a.column === 'tech-art' || a.tags?.some((t) => t.includes('科技') || t.includes('艺术') || t.includes('硬件'))
+  );
+
+  // 往期 / 本期刊物结构预留
+  const issues = [
+    { id: '47-AUTUMN', name: '智元47年秋季号 (第09期)', date: '智元47年09月', count: allZxr.length, active: true },
+    { id: '47-SUMMER', name: '智元47年夏季号 (第08期)', date: '智元47年06月', count: 4, active: false },
+    { id: '47-SPRING', name: '智元47年春季号 (第07期)', date: '智元47年03月', count: 5, active: false },
+  ];
+
+  return {
+    coverArticle,
+    issueArticles: allZxr,
+    featuredArticles,
+    exclusiveArticles,
+    peopleArticles,
+    cityLifeArticles,
+    techArtArticles,
+    latestArticles: remaining,
+    allZxrArticles: allZxr,
+    issues,
+  };
+}
+
 // 6. Editorial Home Curation
 export function getEditorialHome(): {
   instantAttentionArticles: Article[];
